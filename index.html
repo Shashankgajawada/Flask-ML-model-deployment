@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask</title>
+</head>
+<body>
+    <form action="{{url_for('predict')}}" method="post">
+    <input type="text" name="area" placeholder="Enter area: "></input>
+    <input type="text" name="bedrooms" placeholder="Enter no. of bedrooms: "></input>
+    <input type="text" name="guestroom" placeholder="Enter no. of guestroom: "></input>
+    <input type="text" name="basement" placeholder="basement"></input>
+    <input type="text" name="hotwaterheating" placeholder="hotwaterheating: "></input>
+    <input type="text" name="airconditionings" placeholder="airconditionings: "></input>
+    <input type="text" name="prefarea" placeholder="prefarea: "></input>
+    <input type="text" name="furnishingstatus" placeholder="furnishingstatus: "></input>
+    <input type="text" name="stories" placeholder="Enter no. of stories: "></input>
+    <input type="text" name="mainroad" placeholder="mainroad: "></input>
+    <input type="text" name="parking" placeholder="parking: "></input>
+    <input type="text" name="bathrooms" placeholder="bathrooms: "></input>
+        <button type="submit">Submit</button>
+    </form>
+    <h3><br>{{prediction_text}}</h3>
+</body>
+</html>
